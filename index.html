@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Memma!</title>
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon-16x16.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="manifest" href="site.webmanifest">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="container header-content">
+            <div class="logo-username-container">
+                <div class="logo-container">
+                    <img src="logo/meme logo.png" alt="Memma! Logo" class="site-logo">
+                    <h1>Memma!</h1>
+                </div>
+                <div class="insta-handle">
+                    <a href="https://www.instagram.com/ozae_06/" target="_blank" class="insta-link">
+                        <i class="fab fa-instagram"></i> @ozae_06
+                    </a>
+                </div>
+            </div>
+            <div class="header-controls">
+                <div class="search-container">
+                    <input type="text" id="searchInput" placeholder="Search memes...">
+                    <i class="fas fa-search"></i>
+                </div>
+                <button id="themeToggle" class="theme-toggle" aria-label="Toggle dark mode">
+                    <i class="fas fa-moon"></i>
+                    <i class="fas fa-sun"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="tabs">
+            <button class="tab-btn active" data-tab="all">All Memes</button>
+            <button class="tab-btn" data-tab="normal">Normal Memes</button>
+            <button class="tab-btn" data-tab="green">Green Screen Memes</button>
+        </div>
+
+        <div class="meme-container" id="memeContainer">
+            <!-- Memes will be loaded here by JavaScript -->
+        </div>
+    </main>
+
+    <footer class="social-footer">
+        <div class="container">
+            <div class="social-links">
+                <a href="https://www.instagram.com/ozae_06/" target="_blank" class="social-link" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCpH4EfErYf7X46-0dM99oIQ" target="_blank" class="social-link" aria-label="YouTube">
+                    <i class="fab fa-youtube"></i>
+                </a>
+            </div>
+            <p class="copyright">© 2025 Memma! All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
